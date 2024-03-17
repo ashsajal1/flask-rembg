@@ -1,6 +1,6 @@
 {% extends "base.html" %} {% block title %}Home - Your Flask App{% endblock %}
 {% block content %}
-<div class='flex items-center p-12'>
+<div class="flex items-center justify-between p-12">
   <div class="py-12 px-2 flex items-center sm:items-start flex-col gap-6">
     <h1 class="text-3xl font-bold text-blue-600 text-center">
       Welcome to AI Tools website
@@ -12,6 +12,7 @@
   </div>
 
   <div>
+    <img class='h-[200px] w-[200px]' src="{{ url_for('static', filename='images/ai-cover.jpg') }}" alt="Example Image">
 
   </div>
 </div>

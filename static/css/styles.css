@@ -581,12 +581,28 @@ video {
   position: static;
 }
 
+.relative {
+  position: relative;
+}
+
 .block {
   display: block;
 }
 
+.inline {
+  display: inline;
+}
+
 .flex {
   display: flex;
+}
+
+.h-\[200px\] {
+  height: 200px;
+}
+
+.w-\[200px\] {
+  width: 200px;
 }
 
 .flex-col {
