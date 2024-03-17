@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}Your Flask App{% endblock %}</title>
+    <!-- Include your custom CSS file -->
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/styles.css') }}"
+    />
+    {% block head %} {% endblock %}
+  </head>
+  <body>
+    {% include 'shared/navbar.html' %}
+    <main>{% block content %} {% endblock %}</main>
+    {% include 'shared/footer.html' %}
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    {% block scripts %} {% endblock %}
+  </body>
+</html>
