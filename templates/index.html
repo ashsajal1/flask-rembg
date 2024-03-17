@@ -1,8 +1,18 @@
-{% extends "base.html" %}
-
-{% block title %}Home - Your Flask App{% endblock %}
-
+{% extends "base.html" %} {% block title %}Home - Your Flask App{% endblock %}
 {% block content %}
-<h1 class='bg-blue-600'>Welcome to the Home Page</h1>
-<p>This is the content of the home page.</p>
+<div class='flex items-center p-12'>
+  <div class="py-12 px-2 flex items-center sm:items-start flex-col gap-6">
+    <h1 class="text-3xl font-bold text-blue-600 text-center">
+      Welcome to AI Tools website
+    </h1>
+    <div class="flex items-center gap-2">
+      <button class="btn">Explore tools</button>
+      <button class="btn-outline">Explore tools</button>
+    </div>
+  </div>
+
+  <div>
+
+  </div>
+</div>
 {% endblock %}
